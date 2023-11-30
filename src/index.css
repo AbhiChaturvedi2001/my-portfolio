@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+.nav-links a:hover {
+  transition: all 0.4s ease-in-out;
+  color: #854ce6;
+  cursor: pointer;
+}
+
+.resumebtn {
+  background: linear-gradient(156deg, darkviolet, blue);
+  background-size: 120% 120%;
+  animation: gradient-animation 14s ease infinite;
+  border-radius: 2rem;
+  color: white;
+
+}
+
+.btn {
+  background: linear-gradient(156deg, darkviolet, blue);
+  background-size: 120% 120%;
+  animation: gradient-animation 14s ease infinite;
+  border-radius: 2rem;
+  color: white;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tags {
+  background: linear-gradient(156deg, darkviolet, blue);
+  background-size: 120% 120%;
+  animation: gradient-animation 14s ease infinite;
+  border-radius: 2rem;
+  color: white;
+}
+
+.projectCard {
+  transition: all 0.4s ease-in-out;
+}
+
+.projectCard:hover {
+  box-shadow: 4px 0px 17px -1px rgba(0, 0, 0, 0.75);
+}
