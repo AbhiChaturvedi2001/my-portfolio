@@ -25,13 +25,13 @@ const ProjectSection = () => {
           I have worked on a wide range of projects. From web apps <br /> to
           android apps. Here are some of my projects
         </p>
-        <div className="flex justify-center my-10">
+        <div className="flex justify-center my-10 px-5">
           {buttonsData.map((btn) => {
             return (
               <>
                 <button
                   onClick={() => handleFiltering(btn.id)}
-                  className="px-3 py-2 w-[10%] font-Poppins font-bold cursor-pointer border"
+                  className="px-3 py-2 w-[10%] max-md:w-[20%] max-sm:w-full font-Poppins font-bold cursor-pointer border"
                   id={btn.id}
                 >
                   {btn.buttonName}

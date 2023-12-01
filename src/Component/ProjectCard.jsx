@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import ProjectModal from "./ProjectModal";
 
 const ProjectCard = ({ items, tags }) => {
   const { title, image, description } = items;
+  const [showmodal, setshowmodal] = useState(false);
   return (
     <>
       <div
@@ -22,9 +24,18 @@ const ProjectCard = ({ items, tags }) => {
             })}
           </div>
           <h1 className="font-Poppins text-2xl font-bold ml-2 mt-3">{title}</h1>
-          <p className="ml-2 mt-3 font-Poppins">{description}</p>
+          <p className="ml-2 mt-3 font-Poppins">
+            {description.substr(0, 60)}.....
+          </p>
+          <button
+            onClick={() => setshowmodal(true)}
+            className="ml-2 px-2 border py-1 cursor-pointer mt-4"
+          >
+            check out{" "}
+          </button>
         </div>
       </div>
+      {showmodal && <ProjectModal />}
     </>
   );
 };

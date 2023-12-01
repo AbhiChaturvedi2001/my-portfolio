@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({ title, skill }) => {
   return (
     <>
-      <div className="w-[32rem] min-h-[40vh] h-auto border cursor-pointer transition-all duration-100 delay-100   shadow-lg shadow-cyan-500/50 border-[#854ce6] rounded-md px-2 py-3 ">
+      <div className="w-[32rem] max-sm:w-full min-h-[40vh] h-auto border cursor-pointer transition-all duration-100 delay-100   shadow-lg shadow-cyan-500/50 border-[#854ce6] rounded-md px-2 py-3 ">
         <h1 className="text-center font-Poppins text-4xl font-bold text-[#b1b2b3] my-3">
           {title}
         </h1>

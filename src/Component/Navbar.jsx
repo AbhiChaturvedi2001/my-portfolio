@@ -19,7 +19,7 @@ const Navbar = () => {
           <DiCssdeck className="text-5xl font-bold" />
           <span className=" font-Poppins font-bold text-xl ">Portfolio</span>
         </div>
-        <ul className="nav-links flex justify-around w-[25rem] font-semibold items-center font-Poppins max-md:hidden ">
+        <ul className="nav-links flex justify-around w-[28rem] font-semibold items-center font-Poppins max-md:hidden ">
           <li>
             <a href="#about">About</a>
           </li>
@@ -31,6 +31,9 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#education ">Education</a>
+          </li>
+          <li>
+            <a href="">DSA Sheet </a>
           </li>
         </ul>
         <a href="https://github.com/AbhiChaturvedi2001" target="__blank">
@@ -48,7 +51,7 @@ const Navbar = () => {
       <div
         className={`hidden ${
           checkNavbar ? `max-md:block` : `max-md:hidden`
-        } bg-bodyBgColor text-white py-5`}
+        } bg-bodyBgColor text-white py-5 mt-12 transition-all duration-150 delay-150 `}
       >
         <ul className="nav-links font-Poppins font-bold ml-[50px] pt-5 ">
           <li>

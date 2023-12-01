@@ -13,7 +13,7 @@ const Hero = () => {
           <h1 className="font-bold text-4xl mt-4">{Bio.name}</h1>
           <h1 className="flex items-center font-bold text-3xl mt-4 ">
             I am
-            <span className="ml-2 text-[#854ce6] text-4xl font-bold font-Poppins">
+            <span className="ml-2 text-[#854ce6] text-center text-4xl font-bold font-Poppins">
               <Typewriter
                 options={{
                   strings: Bio.roles,
@@ -23,7 +23,9 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <p className="w-[80%] mt-4">{Bio.description}</p>
+          <div className="w-[80%] mx-sm:mx-auto">
+            <p className="text-[5px] mt-4">{Bio.description}</p>
+          </div>
           <a href="./abhi(1).pdf" download>
             <button className="resumebtn mt-4 border px-5 w-[15rem] py-3 font-bold font-Poppins">
               Get RESUME

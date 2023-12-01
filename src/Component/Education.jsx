@@ -10,7 +10,7 @@ const Education = () => {
     <>
       <div id="education" className="text-center my-5">
         <h1 className="text-4xl font-Poppins font-bold">Education</h1>
-        <p className="font-Poppins mt-2 max-sm:w-[80%] mx-auto max-sm:text-center">
+        <p className="font-Poppins mt-2 max-sm:w-[80%] px-3 mx-auto max-sm:text-center">
           My education has been a journey of self-discovery and growth. My
           educational details are as follows.
         </p>
