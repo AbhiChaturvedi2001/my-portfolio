@@ -1,9 +1,11 @@
 import React from "react";
 import { Bio } from "../data/constant";
 import Typewriter from "typewriter-effect";
+import SideBar from "./SideBar";
 const Hero = () => {
   return (
     <>
+      <SideBar />
       <div
         id="about"
         className="text-black h-[70vh] mt-[80px] w-[80%] mx-auto flex justify-center items-center"

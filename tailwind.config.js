@@ -8,7 +8,7 @@ export default {
     extend: {
       backgroundColor: {
         bodyBgColor: "#191924",
-        transparentColor: "rgba(0, 0, 0, 0.1)",
+        transparentColor: "rgba(0, 0, 0, 0.4)",
       },
       fontFamily: {
         Poppins: ['Poppins', 'sans-serif']

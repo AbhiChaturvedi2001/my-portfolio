@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       {/* for full screen menu */}
-      <nav className="flex fixed z-[1000] top-0 justify-around bg-white  items-center w-full min-h-[8vh] text-black px-5 py-2 max-md:justify-between max-md:px-10 ">
+      <nav className="flex fixed z-[300] top-0 justify-around bg-white  items-center w-full min-h-[8vh] text-black px-5 py-2 max-md:justify-between max-md:px-10 ">
         <div className="logo flex items-center">
           <DiCssdeck className="text-5xl font-bold" />
           <span className=" font-Poppins font-bold text-xl ">Portfolio</span>

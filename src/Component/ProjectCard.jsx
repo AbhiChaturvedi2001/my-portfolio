@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
 const ProjectCard = ({ items, tags }) => {
-  const { title, image, description } = items;
+  const { id, title, image, description } = items;
   const [showmodal, setshowmodal] = useState(false);
+  const closeModal = () => {
+    setshowmodal(false);
+  };
   return (
     <>
       <div
@@ -29,13 +32,13 @@ const ProjectCard = ({ items, tags }) => {
           </p>
           <button
             onClick={() => setshowmodal(true)}
-            className="ml-2 px-2 border py-1 cursor-pointer mt-4"
+            className="ml-2 px-2 btn font-bold font-Poppins  border py-1 cursor-pointer mt-4"
           >
             check out{" "}
           </button>
         </div>
       </div>
-      {showmodal && <ProjectModal />}
+      {showmodal && <ProjectModal closeModal={closeModal} />}
     </>
   );
 };
